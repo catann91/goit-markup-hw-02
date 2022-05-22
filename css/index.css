@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+:root {
+  --color-highlight: #2196f3;
+  --color-text: #212121;
+  --color-description: #757575;
+  --white: #ffffff;
+  --black: #000000;
+}
+
 .header {
   padding: 25px 215px;
 }
@@ -13,7 +21,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  color: #000000;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -23,7 +31,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  color: #2196f3;
+  color: var(--color-highlight);
 }
 
 .navigation-link {
@@ -32,14 +40,20 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #212121;
+  color: var(--color-text);
   text-decoration: none;
 }
 
 .navigation-link:hover,
 .mail:hover,
 .phone:hover {
-  color: #2196f3;
+  color: var(--color-highlight);
+}
+
+.navigation-link:focus,
+.mail:focus,
+.phone:focus {
+  color: var(--color-highlight);
 }
 
 .mail,
@@ -49,7 +63,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #757575;
+  color: var(--color-description);
   text-decoration: none;
 }
 
@@ -69,12 +83,12 @@
   line-height: 60px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white);
   margin-bottom: 30px;
 }
 
 .button {
-  background-color: #2196f3;
+  background-color: var(--color-highlight);
   border: none;
   padding: 10px 32px;
   border-radius: 4px;
@@ -87,7 +101,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: var(--white);
   margin-left: 700px;
 }
 
@@ -123,7 +137,7 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--color-text);
 }
 
 .adv-text {
@@ -132,7 +146,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #757575;
+  color: var(--color-description);
 }
 
 .examples-h,
@@ -143,7 +157,7 @@
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  color: #212121;
+  color: var(--color-text);
   margin-bottom: 50px;
 }
 
@@ -159,7 +173,7 @@
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #212121;
+  color: var(--color-text);
 }
 
 .team-despription {
@@ -169,7 +183,7 @@
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #757575;
+  color: var(--color-description);
 }
 
 .footer {
@@ -183,7 +197,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
   margin-bottom: 20px;
 }
@@ -194,7 +208,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .mail-footer,
